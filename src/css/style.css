@@ -20,7 +20,7 @@ header{
 }
 
 .bar{
-	width: 450px;
+	width: 100%;
 	height: inherit;
 	float:  right;
 
@@ -36,7 +36,7 @@ header{
 }
 .bar_menu{
 	display: block;
-	width: 550px;
+	width: 55%;
 	height: 60px;
 }
 
@@ -45,6 +45,7 @@ header{
 	height: 500px;
 	background-image: url("../img/backgrounds/background.png");
 	background-repeat: no-repeat;
+	z-index: 0;
 }
 
 h1{
@@ -57,12 +58,17 @@ h2{
 	margin-top: 40px;
 	margin-bottom: 40px;
 }
-.title_container{
-	margin-top: 200px;
-	margin-left: 100px;
-	width: 600px;
+
+.foreground{
+	padding-top: 200px;
+	padding-left: 10%;
+	width: 60%;
+	height: 180px;
+	text-align: center
+}
+
+#title_container{
 	height: 130px;
-	text-align: center;
 	font-size: 24px;
 	color: #6d7682;
 }
@@ -72,11 +78,8 @@ h2{
 	margin-bottom: 10px;
 }
 
-.first_screen_buttons{
-	width: 600px;
-	height: 50px;
-	text-align: center;
-	margin-left: 100px;
+#first_screen_buttons{
+	height: 50px;	
 }
 
 
@@ -126,11 +129,9 @@ h2{
 }
 
 .about_me_text{
-	width: 600px;
-	text-align: left;
-	margin-left: 350px;
-	margin-top: 20px;
-	text-align: justify;
+	width: 100%;
+	padding: 20px 25% 0px 25%;
+	text-align: center;
 	line-height: 20px;
 }
 
@@ -141,8 +142,7 @@ h2{
 .download_cv_button{
 	width: 100%;
 	text-align: center;
-	margin-top: 20px;
-	margin-bottom: 20px;
+	padding: 20px 40% 0px 40%;
 }
 
 #download_cv_btn{
@@ -155,33 +155,32 @@ h2{
 }
 
 .skills_list{
-	display: block;
+	display: flex;
 	width: 100%;
-	height:  170px;
+	height:  250px;
 	margin-bottom: 40px;
-}
-
-.skills_list li{
-	display: inline;
-	float: left;
-	text-align: center;
-	padding-top: 60px;
-	vertical-align: middle;
-
+	justify-content: space-between;
 }
 
 .skill{
-	display: block;
-	width: 250px;
-	height: 50px;
+	display: contents;
 	margin-right: 30px;
 	margin-left: 25%;
 	text-align: center;
 
 }
 
+.skills_list li{
+
+	float: left;
+	width: 25%;
+	height: 220px;
+	text-align: center;
+	padding-top: 60px;
+
+}
+
 .skill_img{
-	
 	width: 60px;
 	height: 40px;
 }
@@ -198,6 +197,8 @@ h2{
 	font-size: 14px;
 	font-weight:500;
 	color: 	#192e42;
+	width: 100%;
+	padding: 0px 20%;
 }
 
 .third_screen{
@@ -262,13 +263,14 @@ h2{
 		height: 50px;
 		background-color:  #f58852;
 		display: flex;
-		justify-content: space-between;
+		justify-content: space-evenly;
 	}
 
 .open_cloud_logo{
-	width: 176px;
-	margin-left: 112px;
-	padding-top: 15px;
+	width: 25%;
+    margin-left: 12%;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .nav_list{
@@ -281,8 +283,7 @@ h2{
 
 .site_example_navbar li{
 	float: right;
-	margin-right: 25px;
-	
+	padding-right: 5%;
 }
 
 .site_example_navbar button{
@@ -301,16 +302,16 @@ h2{
 }
 
 .example_site_advantages_list{
-	width: 100%;
+	width: 83%;
 	height: 400px;
 	background-color: #fff;
-
+	margin-left: 17%;
 }
 
 .example_site_advantages_list p{
 		background-color: #8d9798;
 		color: 	#fff;
-		margin-left: 165px;
+		
 		text-align: center;
 }
 
@@ -358,7 +359,6 @@ h2{
 .see_features_btn{
 	width: 160px;
 	height: 50px;
-	margin-left: 165px;
 	background-color: #f48953;
 	border: 1px solid #f48953;
 	color: #fff;
@@ -377,12 +377,10 @@ h2{
 }
 
 .project_data{
-	width: 75%;
 	height: 70px;
-	margin-left: 25%;
-	margin-bottom: 30px;
-	float: right;
-	display: contents;
+    padding-left: 10%;
+    margin-bottom: 30px;
+    line-height: 19px;
 }
 
 .project_data h4{
@@ -396,12 +394,8 @@ h2{
 }
 
 .client_info{
-	width: 25%;
-	height: 70px;
-	color:#1a2e43;
 	float: left;
-	margin-left: 130px;
-	display: contents;
+    padding-left: 17%;
 }
 
 .client_info h5{
@@ -414,6 +408,12 @@ h2{
 	font-size: 15px;
 	margin-bottom: 10px;
 }
+
+.visit_site_button{
+	margin-top: 25px;
+	padding-left: 17%;
+}
+
 .visit_site_button button{
 	width: 205px;
 	height: 45px;
@@ -421,8 +421,8 @@ h2{
 	border: 1px solid;
 	color: white;
 	font-size: 14px;
-  font-weight: 600;
-  margin-top: 25px;
+  	font-weight: 600;
+  	
 }
 
 .price_range{
@@ -450,17 +450,18 @@ h2{
 .price_range h4{
 	width: 180px;
 	height: 30px;
-	margin-left: 130px;
+	margin-left: 13%;
 	font-size: 16px;
 	font-weight: 600;
 	color: #1a2e43;
 }
 
 .price_range select{
-	width: 180px;
+	width: 67%;
 	height: 40px;
-	margin-left: 130px;
+	margin-left: 13%;
 	margin-bottom: 25px;
+	padding-right: 20%;
 	color: #737373;
 	border: 1px solid #fff;
 }
@@ -470,13 +471,14 @@ h2{
 }
 
 .deadline, .price{
-	width: 900px;
+	width: 87%;
 	height: 30px;
-	margin-left: 130px;
+	margin-left: 13%;
 }
 
 .deadline h5, .price h5{
 	font-weight: 700;
+	height: 30px;
 }
 
 .deadline input, .price input{
@@ -497,20 +499,15 @@ h2{
 	height:  200px;
 	display: flex;
 	justify-content: space-between;
-	margin-top: 100px;
-	margin-bottom:50px;
-	margin-left: 110px;
-	margin-right: 110px;
+	margin: 100px 10% 50px 10%;
 }
 
 .statistics_list ul{
-	margin-right: 20px;
 	display: contents;
 	text-align: center;
 }
 
 .statistic_icon{
-
 	margin-bottom: 20px;
 	margin-left: inherit;
 }
@@ -572,7 +569,9 @@ h2{
 	padding: 30px 30%;
 }
 
+
 .contact_options ul{
+	width: 100%;
 	display: contents;
 	text-align: center;
 	line-height: 1.5;
@@ -584,9 +583,10 @@ h2{
 
 
 .contact_form{
-	width: 100%;
+	width: 95%;
 	margin-top: 30px;
-	padding-left: 30%;
+	padding:0% 25%;
+	margin-left: 5%;
 }
 
 .subtopic_name{
@@ -594,7 +594,7 @@ h2{
 }
 
 .box{
-	width: 60%;
+	width: 100%;
 	height: 30px;
 	display: flex;
 	justify-content: space-between;
@@ -602,28 +602,32 @@ h2{
 }
 
 .contact_field{
-	display: contents;
-}
-
+	display: block;
+	width: 50%;
+	margin-right: 13%;
 }
 
 .contact_field input{
-	width: 300px;
+	width: 230px;
+	height: 30px;
 }
 
-
+.msg{
+	width: 42%;
+    margin-left: 30%;
+}
 .contact_message{
 	width: 100%;
 	margin-bottom: 20px;
 }
 
 .contact_message textarea{
-	width: 530px;
+	width: 100%;
 	resize: none;
 }
 
 .contact_submit_button{
-	width: 60%;
+	width: 100%;
 	height: 50px;
 	text-align: center;
 }
@@ -640,9 +644,9 @@ h2{
 }
 
 .social_networks{
-	width: 64%;
-	margin-top: 120px;
-	text-align: center;
+	width: 50%;
+	margin-top: 121px;
+	margin-left: 27%;
 	display: flex;
 	justify-content: center;
 }
@@ -651,9 +655,10 @@ h2{
 }
 
 .social_networks li{
-	width: 20px;
-	height: 20px;
-	padding-right: 78px;
+	width: 35px;
+	height: 30px;
+	padding-right: 12%;
+	opacity: 0;
 }
 
 
