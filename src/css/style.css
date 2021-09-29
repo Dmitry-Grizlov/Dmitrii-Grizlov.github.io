@@ -22,15 +22,12 @@ header{
 .bar{
 	width: 100%;
 	height: inherit;
-	float:  right;
-
 }
 
 .bar li{
-	display: contents;
-
 	color: #fff;
- 	margin-right: 30px;
+ 	float: left;
+  padding-right: 7%;;
  	font-size: 16px;
  	line-height: 4;
 }
@@ -38,6 +35,7 @@ header{
 	display: block;
 	width: 55%;
 	height: 60px;
+	padding-left: 15%;
 }
 
 .container_1{
@@ -156,9 +154,9 @@ h2{
 
 .skills_list{
 	display: flex;
-	width: 100%;
+	width: 80%;
 	height:  250px;
-	margin-bottom: 40px;
+	margin: 40px auto 0px auto;
 	justify-content: space-between;
 }
 
@@ -169,6 +167,7 @@ h2{
 	text-align: center;
 
 }
+
 
 .skills_list li{
 
@@ -464,6 +463,8 @@ h2{
 	padding-right: 20%;
 	color: #737373;
 	border: 1px solid #fff;
+	box-shadow: 2px 2px #C7BACB;
+	background-color: #fff;
 }
 
 .option{
@@ -583,10 +584,9 @@ h2{
 
 
 .contact_form{
-	width: 95%;
+	width: 85%;
 	margin-top: 30px;
-	padding:0% 25%;
-	margin-left: 5%;
+	margin-left: 30%;	
 }
 
 .subtopic_name{
@@ -594,7 +594,7 @@ h2{
 }
 
 .box{
-	width: 100%;
+	width: 70%;
 	height: 30px;
 	display: flex;
 	justify-content: space-between;
