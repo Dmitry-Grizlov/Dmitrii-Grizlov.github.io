@@ -178,7 +178,6 @@ h2{
 	to{
 		transform: scale(1.1);
 	}
-
 }
 
 .topic_name{
@@ -190,7 +189,7 @@ h2{
 }
 
 .topic_line{
-	width: 100%:;
+	width: 100%;
 	height: 5px;
 	text-align: center;
 }
@@ -262,7 +261,6 @@ h2{
 
 }
 
-
 .skills_list li{
 
 	float: left;
@@ -279,7 +277,7 @@ h2{
 }
 
 .skill_img:hover{
-	animation: scale_btn 2s ease;
+	animation: scale_btn 2s forwards;
 	transition:  transform;
 }
 
@@ -324,7 +322,6 @@ h2{
 }
 
 .site_example_login_bar ul{
-		
 		margin-right: 50px;
 }
 
@@ -350,18 +347,18 @@ h2{
 		background-color: #567070;
 		float: right;
 		padding-top: 6px;
-	}
+}
 
-	#login{
-		padding-right: 10px;
-	}
+#login{
+	padding-right: 10px;
+}
 
-	.site_example_navbar{
-		height: 50px;
-		background-color:  #f58852;
-		display: flex;
-		justify-content: space-evenly;
-	}
+.site_example_navbar{
+	height: 50px;
+	background-color:  #f58852;
+	display: flex;
+	justify-content: space-evenly;
+}
 
 .open_cloud_logo{
 	width: 25%;
@@ -464,6 +461,12 @@ h2{
 	text-align: center;
 }
 
+.see_features_btn:hover{
+	background-color: #dd8d54;
+	color:white;
+	transition:1s ease;
+}
+
 .project_info{
 	width: 100%;
 	height: 100px;
@@ -507,6 +510,18 @@ h2{
 .visit_site_button{
 	margin-top: 25px;
 	padding-left: 17%;
+	border: 1px solid none;
+}
+
+.visit_site_button button:hover{
+	box-shadow:5px 5px #8693a1;
+	color: whitesmoke;
+	transition: 1s;
+}
+
+.visit_site_button button:active{
+	animation: scale_btn 0.5s ease;
+	transition:  transform;
 }
 
 .visit_site_button button{
@@ -541,10 +556,6 @@ h2{
 	margin-bottom: 35px;
 }
 
-.site_type{
-	margin-top: 35px;
-}
-
 .price_range h4{
 	width: 180px;
 	height: 30px;
@@ -554,7 +565,6 @@ h2{
 	color: #1a2e43;
 }
 
-/* TODO:  When click on the form the border appears.;*/
 .price_range select{
 	width: 67%;
 	height: 40px;
@@ -565,6 +575,11 @@ h2{
 	border: 1px solid #fff;
 	box-shadow: 2px 2px #C7BACB;
 	background-color: #fff;
+}
+
+.price_range select:focus {
+	border: 2px solid #000;
+	background-color: #d5d6d8;
 }
 
 .option{
@@ -613,9 +628,9 @@ h2{
 	margin-left: inherit;
 }
 
-.statistic_icon:hover{
-	animation: scale_btn 2s ease;
-	transition:  transform;
+.statistic_icon img:hover{
+	transform: rotateY(360deg) rotate(360deg);
+	transition: 2s;
 }
 
 .statistic_number{
@@ -687,7 +702,11 @@ h2{
 	margin-bottom: 20px;
 }
 
+.contacts_icon img:hover{
+	transform:rotate(1080deg);
+	transition:2s ease;
 
+}
 .contact_form{
 	width: 70%;
     margin-top: 30px;
@@ -704,7 +723,6 @@ h2{
     margin-bottom: 15px;
 }
 
-/* TODO:  When click on the form the border appears.;*/
 .contact_field{
 	display: block;
     width: 44.5%;
@@ -712,13 +730,14 @@ h2{
     float: left;
 }
 
-.contact_field input{
+.contact_form input{
 	width: 100%;
     height: 30px;
 }
 
-.contact_field:focus{
-	
+.contact_field input:focus{
+	border: 2px solid #fff;
+	border-radius: 2px;
 }
 
 .msg{
@@ -733,6 +752,10 @@ h2{
 .contact_message textarea{
 	width: 100%;
 	resize: none;
+}
+
+.contact_message textarea:focus{
+	border:2px solid #000;
 }
 
 .contact_submit_button{
