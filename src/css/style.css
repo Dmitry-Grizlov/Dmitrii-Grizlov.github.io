@@ -3,39 +3,78 @@ header{
 	height: 60px;
 	background-color: #344051;
 	font-size:24px
-
 }
 
 .container{
 	display: flex;
 	justify-content: space-between;
+
 }
 
 .logo{
 	width: 200px;
 	height: 60px;
 	margin-left: 195px;
-	line-height: 2;
+	line-height: 2.5;
 	color: #fff;
+	animation:  logo_ltor_slide 0.5s forwards;
+}
+
+.logo:active{
+	color: #eb7800;
+}
+
+@keyframes logo_ltor_slide{
+	from{
+		opacity: 0;
+		margin-left: 0px;
+	}
+	to{
+		opacity: 1;
+	}
+}
+
+@keyframes logo_rtol_slide{
+	from{
+		opacity: 0;
+		width: 0px;
+	}
+	to{
+		opacity: 1;
+		width: 100%;
+	}
 }
 
 .bar{
 	width: 100%;
 	height: inherit;
+	animation:  logo_rtol_slide 2s ease;
 }
 
 .bar li{
 	color: #fff;
  	float: left;
-  padding-right: 7%;;
+  	padding-right: 5%;;
  	font-size: 16px;
  	line-height: 4;
 }
+
+
+.bar li a:active{
+	color: #eb7800;
+	animation: scale_btn 0.05s ease;
+	transition:  transform;
+}
+
+a:visited{
+	color: #fff;
+}
+
 .bar_menu{
 	display: block;
 	width: 55%;
 	height: 60px;
-	padding-left: 15%;
+	padding-left: 5%;
 }
 
 .container_1{
@@ -62,7 +101,21 @@ h2{
 	padding-left: 10%;
 	width: 60%;
 	height: 180px;
-	text-align: center
+	text-align: center;
+	animation: foreground_ltor_slide 2s ease;
+	transition:  transform;
+}
+
+@keyframes foreground_ltor_slide{
+	from{
+		opacity: 0;
+		margin-left: -60%;
+		transform: rotate(-45deg);
+	}
+	to{
+		opacity: 1;
+		margin-left: 0%;
+	}
 }
 
 #title_container{
@@ -80,6 +133,27 @@ h2{
 	height: 50px;	
 }
 
+#about_me_btn:active{
+	animation: scale_btn 0.05s ease;
+	transition:  transform;
+}
+
+#my_works_btn:active{
+	animation: scale_btn 0.05s ease;
+	transition:  transform;
+}
+
+#about_me_btn:hover{
+	background-color: #344051;
+	color: white;
+	border-color: white;
+}
+
+#my_works_btn:hover{
+	background-color: #344051;
+	color: white;
+	border-color: white;
+}
 
 #about_me_btn{
 	width: 80px;
@@ -95,6 +169,16 @@ h2{
 	border: 2px solid #6d7682;
 	border-radius: 5px;
 	color: #6d7682;
+}
+
+@keyframes scale_btn{
+	from{
+		transform: scale(1);
+	}
+	to{
+		transform: scale(1.1);
+	}
+
 }
 
 .topic_name{
@@ -152,6 +236,16 @@ h2{
 	margin-bottom: 70px;
 }
 
+#download_cv_btn:active{
+	animation: scale_btn 0.05s ease;
+	transition:  transform;
+}
+
+#download_cv_btn:hover{
+	background-color: #344051;
+	color: white;
+}
+
 .skills_list{
 	display: flex;
 	width: 80%;
@@ -182,6 +276,11 @@ h2{
 .skill_img{
 	width: 60px;
 	height: 40px;
+}
+
+.skill_img:hover{
+	animation: scale_btn 2s ease;
+	transition:  transform;
 }
 
 .skill_name{
@@ -230,11 +329,11 @@ h2{
 }
 
 .tel{
-			color: #fff;
-			font-size: 12px;
-			padding-top: 10px;
-			margin-left: 112px;
-			float:  left;
+	color: #fff;
+	font-size: 12px;
+	padding-top: 10px;
+	margin-left: 112px;
+	float:  left;
 }
 
 .site_example_login_bar li{
@@ -242,7 +341,7 @@ h2{
 	display: inline;
 	float: right;
 	margin-right: 10px;
-	}
+}
 
 	
 
@@ -251,7 +350,6 @@ h2{
 		background-color: #567070;
 		float: right;
 		padding-top: 6px;
-
 	}
 
 	#login{
@@ -308,19 +406,18 @@ h2{
 }
 
 .example_site_advantages_list p{
-		background-color: #8d9798;
-		color: 	#fff;
-		
-		text-align: center;
+	background-color: #8d9798;
+	color: 	#fff;
+	text-align: center;
 }
 
 .advantage_1{
 	width: 400px;
 	height: 40px;
-  font-size: 20px;
-  margin-top: 60px;
-  margin-bottom: 40px;
-  line-height: 190%;
+  	font-size: 20px;
+  	margin-top: 60px;
+  	margin-bottom: 40px;
+  	line-height: 190%;
 }
 
 .advantage_2{
@@ -402,7 +499,6 @@ h2{
 	margin-bottom: 10px;
 }
 
-
 .client_info p{
 	font-size: 15px;
 	margin-bottom: 10px;
@@ -428,7 +524,9 @@ h2{
 	width: 100%;
 	height: 450px;
 	margin-top: 100px;
-	background-color: #fff;
+	background-image: url(../img/backgrounds/price_range_bg.png);
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 .subtopic_name{
@@ -446,6 +544,7 @@ h2{
 .site_type{
 	margin-top: 35px;
 }
+
 .price_range h4{
 	width: 180px;
 	height: 30px;
@@ -455,6 +554,7 @@ h2{
 	color: #1a2e43;
 }
 
+/* TODO:  When click on the form the border appears.;*/
 .price_range select{
 	width: 67%;
 	height: 40px;
@@ -511,6 +611,11 @@ h2{
 .statistic_icon{
 	margin-bottom: 20px;
 	margin-left: inherit;
+}
+
+.statistic_icon:hover{
+	animation: scale_btn 2s ease;
+	transition:  transform;
 }
 
 .statistic_number{
@@ -599,6 +704,7 @@ h2{
     margin-bottom: 15px;
 }
 
+/* TODO:  When click on the form the border appears.;*/
 .contact_field{
 	display: block;
     width: 44.5%;
@@ -609,6 +715,10 @@ h2{
 .contact_field input{
 	width: 100%;
     height: 30px;
+}
+
+.contact_field:focus{
+	
 }
 
 .msg{
@@ -642,6 +752,12 @@ h2{
 	font-weight: 700;
 }
 
+.contact_submit_button button:active{
+	background-color: #0a1c2f;
+	border-color: none;
+	animation: scale_btn 0.25s ease;
+	transition:  transform;
+}
 .social_networks{
 	width: 50%;
 	margin-top: 121px;
