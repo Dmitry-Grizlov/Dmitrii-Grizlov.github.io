@@ -52,17 +52,26 @@ header{
 }
 
 .bar li{
-	color: #fff;
- 	float: left;
-  	padding-right: 5%;;
- 	font-size: 16px;
- 	line-height: 4;
+	width: 15.5%;
+    height: 30px;
+    margin-top: 18px;
+    color: #fff;
+    float: left;
+    font-size: 16px;
+    line-height: 1.7;
+    text-align: center;
 }
 
+.bar li:hover{
+	border:0.5px solid #fff;
+}
 
 .bar li a:active{
 	color: #eb7800;
-	animation: scale_btn 0.05s ease;
+}
+
+.bar li:active{
+	animation: scale_btn 0.15s ease;
 	transition:  transform;
 }
 
