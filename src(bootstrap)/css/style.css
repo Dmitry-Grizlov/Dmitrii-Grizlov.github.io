@@ -130,9 +130,6 @@ nav{
 	transform: scale(1.1);
 	transition: .2s;
 }
-.second-screen{
-	height: 80vh;
-}
 
 .topic-title{
 	height: 80px;
@@ -200,7 +197,6 @@ nav{
 }
 
 .third-screen{
-	height: 55vh;
 	background-image: url(../img/backgrounds/price_range_bg.png);
 	background-repeat: no-repeat;
 	background-position: center;
@@ -221,17 +217,25 @@ nav{
 	transition:  transform;
 }
 
-.fourth-screen{
-	height: 80vh;
-	background-color: grey;
+.case-img{
+	object-fit: fill;
 }
 
 .topic_description{
 	padding:20px 0;
 }
 
+.form{
+	width: 100%;
+	height: 40px;
+	border-radius: 5px;
+}
+
+.form:focus{
+	box-shadow: 5px 5px 5px #2c3e51;
+}
+
 .fith-screen{
-	height: 85vh;
 	background-color: #fff;
 	background-image: url(//img/backgrounds/price_range_bg.png);
 	background-repeat: no-repeat;
@@ -274,7 +278,6 @@ nav{
 }
 
 .sixth-screen{
-	height:50vh;
 	background-color: #fff;
 }
 
@@ -300,7 +303,6 @@ nav{
 }
 
 .seventh-screen{
-	height: 60vh;
 	background-color: #fff;
 }
 
@@ -315,8 +317,9 @@ nav{
 .eighth-screen{
 	width:100%;
 	background-color: grey;
-	height: 80vh;
-	background-image: url(/img/backgrounds/contacts_bcg.png);
+	background-image: url(../img/backgrounds/contacts_bcg.png);
+	background-position: center;
+	background-size: cover;
 	color: white;
 }
 
