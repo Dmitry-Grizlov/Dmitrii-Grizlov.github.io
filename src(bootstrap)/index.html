@@ -7,9 +7,9 @@
   <meta name="author" content="Дмитрий Гризлов">
   <meta name="keywords" content="web-design, programming, freelance, web, www, site">
   <meta name="robots" content="all">
+  <meta name="viewport" content="width=device-width, intial-scale=1.0">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <meta name="viewport" content="width=device-width, intial-scale=1.0">
   <title>Дмитрий Гризлов Фуллстек веб - разработчик</title>
  </head>
  <body>
@@ -72,21 +72,21 @@
   <section class="second-screen">
 		<div class="conatiner-fluid ">
 			<div class="container">
+				<div class="h4 text-center topic-title">ОБО МНЕ</div>
 				<div class="row">
 					<div class="col-5"></div>
-					<div class="col-2 col-sm-3 text-center">	
-						<div class="h4 text-center topic-title">ОБО МНЕ</div>
+					<div class="col-2 mt-2 mb-3 text-center">	
 						<div class="line"></div>
 					</div>
 					<div class="col-5"></div>
 				</div>
 
-				<div class="row">
+				<div class="row justify-content-center">
 					<div class="col-5"></div>
-					<div class="col-3 text-center image_in_circle">
-						<div> <img class="img-thumbnail" src="img/others/Me.jpg" alt="Фотография загружается..."></div>
+					<div class="col-2 image_in_circle">
+						<div> <img class="img-fluid" src="img/others/Me.jpg" alt="Фотография загружается..."></div>
 					</div>
-					<div class="col-4"></div>		
+					<div class="col-5"></div>		
 				</div>
 				
 				<div class="row">
@@ -98,11 +98,11 @@
 					<div class="col-2"></div>
 				</div>
 				<div class="row">
-					<div class="col-5"></div>
-					<div class="col-3 text-center">
+					<div class="col-4"></div>
+					<div class="text-center mt-1 mb-5">
 						<button class="download_cv_button">
-							<img src="img\icons\download_cv.png" alt="Фотография загружается...">
-							<span">Скачать резюме</span>
+							<img class="img-fluid" src="img\icons\download_cv.png" alt="Фотография загружается...">
+							Скачать резюме
 						</button>
 					</div>
 					<div class="col-4"></div>
@@ -114,13 +114,14 @@
   <section class="third-screen">
 	<div class="container-fluid">
 		<div class="container">
+			<div class="h4 text-center topic-title">ЧТО Я УМЕЮ</div>
 			<div class="row">
-				<div class="col-5"></div>
-				<div class="col-2 col-sm-3 text-center">	
-					<div class="h4 text-center topic-title">ЧТО Я УМЕЮ</div>
+				<div class="col-4"></div>
+				<div class="col-4 mt-2 mb-2 text-center">	
 					<div class="line"></div>
 				</div>
-				<div class="col-5"></div>
+				<div class="col-4"></div>
+				</div>
 			</div>
 
 			<div class="row text-center skills-list">
@@ -155,13 +156,14 @@
   <section class="fourth-screen">
 	<div class="container-fluid">
 		<div class="container">
+			<div class="h4 text-center topic-title">КЕЙСЫ</div>
 			<div class="row">
 				<div class="col-5"></div>
-				<div class="col-2 col-sm-3 text-center">	
-					<div class="h4 text-center topic-title">КЕЙСЫ</div>
+				<div class="col-2 mt-2 text-center">	
 					<div class="line"></div>
 				</div>
 				<div class="col-5"></div>
+				</div>
 			</div>
 
 			<div class="row text-center topic_description">
@@ -172,8 +174,38 @@
 				<div class="col-2"></div>
 			</div>
 			
-			<div class="case-img">
-				<img src="img/backgrounds/case-photo.jpeg" alt="loading...">
+			<div class="mb-5 case-img">
+				<img class="img-fluid" src="img/backgrounds/case-photo.jpeg" alt="">
+			</div>
+
+			<div class="row case-description">
+				<div class="col-2 align-self-start">
+					<div class="h5">CLIENT: </div>
+				</div>
+
+				<div class="col"></div>
+
+				<div class="col-9 align-self-start">
+					<div class="h5">Название проекта</div>
+				</div>
+			</div>
+
+			<div class="row case-description">
+				<div class="col-2 align-self-start">
+					<p class="sub">Какая-то компания</p>
+					<div class="h5">Website</div>
+					<p class="sub">http://domain.com</p>
+				</div>
+
+				<div class="col"></div>
+
+				<div class="col-9 mt-1 align-self-start">
+					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit, expedita.Lorem ipsum dolor sit, amet consectetur adipisicing, elit. Voluptate ex ut error soluta in similique, expedita illo neque beatae deserunt accusantium cumque nemo incidunt accusamus fugiat, non fuga atque velit?</p>
+				</div>
+			</div>
+			
+			<div class="col-2 mb-5 align-self-start">
+				<button class="leave_request_btn">Перейти на сайт</button>
 			</div>
 		</div>
 	</div>
@@ -182,13 +214,7 @@
   <section class="fith-screen">
 	  <div class="container-fluid">
 		  <div class="container">
-			<div class="row price_range">
-				<div class="col-5"></div>
-				<div class="col-2 col-sm-3 text-center">	
-					<div class="h3 text-center topic-title">Расчет стоимости</div>
-				</div>
-				<div class="col-5"></div>
-			</div>
+			<div class="h3 text-center topic-title">Расчет стоимости</div>
 
 			<div class="col-11 offset-1 option-block">
 				<div class="h6">ТИП САЙТА</div>
@@ -230,10 +256,10 @@
 				<input type="range" class="form-range" id="customRange1">
 			</div>
 
-			<div class="row leave-ticket-btn">
+			<div class="row justify-content-evenly leave-ticket-btn">
 				<div class="col-5"></div>
-				<div class="col-2">
-					<button class="leave_request_btn">Оставить заявку</button>
+				<div class="col-2 mb-5">
+					<button class="w-auto h-auto text-wrap leave_request_btn">Оставить заявку</button>
 				</div>
 				<div class="col-5"></div>
 			</div>
@@ -244,55 +270,38 @@
   <section class="sixth-screen">
 	<div class="container-fluid">
 		<div class="container">
+			<div class="h4 cover-heading text-center topic-title">НЕМНОГО СТАТИСТИКИ</div>
 			<div class="row">
 				<div class="col-4"></div>
-				<div class="col-4 text-center">	
-					<div class="h4 text-center topic-title">НЕМНОГО СТАТИСТИКИ</div>
-					<div class=" line"></div>
+				<div class="col-4 mt-2 mb-5 text-center">	
+					<div class="line"></div>
 				</div>
 				<div class="col-4"></div>
 			</div>
 
-			<div class="row statistic-list">
+			<div class="row mb-5 statistic-list">
 				<div class="col-3">
-					<div class="text-center statistic_icon">
-						<img src="img\icons\smile_icon.png" alt="Фотография Загружается...">
-					</div>
-					<div class="text-center statistic_number">120
-					</div>
-					<div class="text-center statistic_description">
-						<p>СЧАСТЛИВЫХ КЛИЕНТОВ</p>			
-					</div>							
+					<div class="img-fluid text-center statistic_icon"><img class="img-fluid" src="img\icons\smile_icon.png" alt="Фотография Загружается..."></div>
+					<div class="text-center statistic_number">120</div>
+					<div class="text-wrap text-center statistic_description">СЧАСТЛИВЫХ КЛИЕНТОВ</div>							
 				</div>
 
 				<div class="col-3">
-					<div class="text-center statistic_icon">
-						<img src="img\icons\yellow_brackets_icon.png" alt="Фотография Загружается...">
-					</div>
+					<div class="text-center statistic_icon"><img class="img-fluid" src="img\icons\yellow_brackets_icon.png" alt="Фотография Загружается..."></div>
 					<div class="text-center statistic_number">4,600</div>
-					<div class="text-center statistic_description">
-						<p>ЧАСОВ РАБОТЫ</p>
-					</div>
+					<div class="text-wrap text-center statistic_description">ЧАСОВ РАБОТЫ</div>
 				</div>
 
 				<div class="col-3">
-					<div class="text-center statistic_icon">
-						<img src="img\icons\tick_icon.png" alt="Фотография Загружается...">
-					</div>
+					<div class="text-center statistic_icon"><img class="img-fluid" src="img\icons\tick_icon.png" alt="Фотография Загружается..."></div>
 					<div class="text-center statistic_number">340</div>
-					<div class="text-center statistic_description">
-						<p>ПРОЕКТОВ ЗАВЕРШЕНО</p>
-					</div>
+					<div class="text-wrap text-center statistic_description">ПРОЕКТОВ ЗАВЕРШЕНО</div>
 				</div>
 
 				<div class="col-3">
-					<div class="text-center statistic_icon">
-						<img src="img\icons\cup_icon.png" alt="Фотография Загружается...">
-					</div>
+					<div class="text-center statistic_icon"><img class="img-fluid" src="img\icons\cup_icon.png" alt="Фотография Загружается..."></div>
 					<div class="text-center statistic_number">23</div>
-					<div class="text-center statistic_description">
-						<p>НАГРАД ПЛУЧЕНО</p>
-					</div>
+					<div class="text-wrap text-center statistic_description"><p>НАГРАД ПЛУЧЕНО</p></div>
 				</div>
 			</div>
 
@@ -303,19 +312,21 @@
   <section class="seventh-screen">	
 	<div class="container-fluid">
 		<div class="container">
+			<div class="h4 text-center topic-title">ОТЗЫВЫ</div>
+
 			<div class="row">
 				<div class="col-5"></div>
-				<div class="col-2 text-center">	
-					<div class="h4 text-center topic-title">ОТЗЫВЫ</div>
+				<div class="col-2 mt-2 text-center">	
 					<div class="line"></div>
 				</div>
 				<div class="col-5"></div>
+				</div>
 			</div>
 
 			<div class="row">
 				<div class="col-5"></div>
 				<div class="col-2 text-center small_customer_photo">
-					<img src="img\others\reviewer_photo.png" alt="Фотография загружается...">	
+					<img class="img-fluid" src="img\others\reviewer_photo.png" alt="Фотография загружается...">	
 				</div>
 				<div class="col-5"></div>
 			</div>
@@ -333,15 +344,12 @@
 				<div class="col-2"></div>
 			</div>
 
-			<div class="row">
-				<div class="col-5"></div>
-				<div class="col-2 text-center switch_review">
-						<input type="radio" name="switch" value="1">
-						<input type="radio" name="switch" value="2">
-						<input type="radio" name="switch" value="3">	
-				</div>
-				<div class="col-5"></div>
+			<div class="mb-5 text-center switch_review">
+				<input type="radio" name="switch" value="1">
+				<input type="radio" name="switch" value="2">
+				<input type="radio" name="switch" value="3">	
 			</div>
+
 		</div>
 	</div>
   </section>
@@ -349,13 +357,15 @@
   <section class="eighth-screen" >
 	<div class="container-fluid">
 		<div class="container">
+			<div class="h4 text-center topic-title">МОИ КОНТАКТЫ</div>
+
 			<div class="row">
 				<div class="col-4"></div>
-				<div class="col-4 text-center">	
-					<div class="h4 text-center topic-title">МОИ КОНТАКТЫ</div>
+				<div class="col-4 mt-2 text-center">	
 					<div class="line"></div>
 				</div>
 				<div class="col-4"></div>
+				</div>
 			</div>
 
 			<div class="row">
@@ -369,23 +379,23 @@
 			<div class="row">
 				<div class="col-3"></div>
 				<div class="col-2 text-center contacts">
-					<img src="img\icons\geolocation_icon.png" alt="Фотография загружается...">
+					<img class="mb-3" src="img\icons\geolocation_icon.png" alt="Фотография загружается...">
 					<p class="address">Санкт-Петербург<br>Невский проспект 11</p>
 				</div>
 
 				<div class="col-2 text-center contacts">
-					<img src="img\icons\letter_icon.png" alt="Фотография загружается...">
+					<img class="mb-3" src="img\icons\letter_icon.png" alt="Фотография загружается...">
 					<p class="email">info@companyname.com</p>
 				</div>
 
 				<div class="col-2 text-center contacts">
-					<img src="img\icons\phone_icon.png" alt="Фотография загружается...">
+					<img class="mb-3" src="img\icons\phone_icon.png" alt="Фотография загружается...">
 					<p class="phone_number">+79999999999</p>
 				</div>
 				<div class="col-3"></div>
 			</div>
 
-			<div class="h5 text-center leave-msg-topic">ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</div>
+			<div class="h5 text-center mb-4 leave-msg-topic">ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</div>
 
 			<div class="row">
 				<div class="col-2"></div>
@@ -403,19 +413,19 @@
 				<div class="col-2"></div>
 			</div>
 
-			<div class="row">
+			<div class="row mb-5">
 				<div class="col-2"></div>
-				<div class="col msg">
+				<div class="col mt-3 mb-5 msg">
 					<textarea class="form-control" rows="5" placeholder="  Сообщение..."></textarea>
 				</div>
 				<div class="col-2"></div>
 			</div>
 
-			<div class="col text-center">
+			<div class="col mt-5 mb-4 text-center">
 				<button class="submit-btn">Отправить</button>
 			</div>
 
-			<div class="row">
+			<div class="row mt-5 mb-5">
 				<div class="col-3"></div>
 				<div class="col text-center networks">
 					<a href="https:\\www.facebook.com">
