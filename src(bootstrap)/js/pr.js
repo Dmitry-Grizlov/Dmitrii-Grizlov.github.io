@@ -1,32 +1,27 @@
-function Validate() {
-	'use strict'
-	var forms = document.querySelectorAll('.needs-validation');
-	Array.prototype.slice.call(forms).forEach(function (form) {
-			form.addEventListener('submit', function (event) {
-				if (!form.checkValidity()) {
-					event.preventDefault()
-					event.stopPropagation()
-				}
-				form.classList.add('was-validated')
-			}, false)
-		})
-};
-
 function GetType() {
 	var select = document.getElementById("type");
 	var value = select.value;
+	if(value == ""){
+		value = 1;
+	}
 	return value;
 };
 
 function GetDesign() {
 	var select = document.getElementById("design");
 	var value = select.value;
+	if(value == ""){
+		value = 1;
+	}
 	return value;
 };
 
 function GetAdaptivity() {
 	var select = document.getElementById("flex");
 	var value = select.value;
+	if(value == ""){
+		value = 1;
+	}
 	return value;
 };
 
@@ -43,11 +38,11 @@ function GetDeadline() {
 function ShowDeadline() {
 	let deadline = ["Неделя", "Месяц", "3 месяца", "Полгода и дольше"];
 	document.getElementById("deadline-display").innerHTML = deadline[GetDeadline() - 1];
-}
+};
 
 function ShowBudget() {
 	document.getElementById("budget-display").innerHTML = GetBudget() + "руб.";
-}
+};
 
 function GetInfo() {
 	let sType = parseInt(GetType()),
@@ -105,53 +100,4 @@ function GetInfo() {
 	document.getElementById("sDdln").innerHTML = "Сроки: " + data[3];
 	document.getElementById("sTotal").innerHTML = "Итого: " + baseprice + "руб.";
 	document.getElementById("sBudget").innerHTML = "Ваш Бюджет: " + sBudget + "руб.";
-}
-
-
-function ProcessEmailModal() {
-	$custName = $('.name').val();
-	$custEmail = $('.emailAddress').val();
-	$custMsg = $('.message').val();
-
-	const email = {
-		name: $(this).$custName,
-		emailAddress: $(this).$custEmail,
-		message: $(this).$custMsg
-	};
-
-	alert("Письмо отправлено");
-	console.log(email);
-	return email;
-};
-
-function ProcessEmail() {
-	$('.name').each(function () {
-		if ($('.name' != "default"))
-			$custName = $(this).val();
-		else
-			form.classList.add('.needs-validation');
-	});
-
-	$('.emailAddress').each(function () {
-		if ($('.emailAddress' != "default"))
-			$custEmail = $(this).val();
-		else
-			form.classList.add('.needs-validation');
-	});
-
-	$('.message').each(function () {
-		if ($('.message value' != "default"))
-			$custMsg = $(this).val();
-		else
-			alert("Empty message!");
-	});
-	const email = {
-		name: $custName,
-		emailAddress: $custEmail,
-		message: $custMsg
-	};
-
-	alert("Письмо отправлено");
-	console.log(email);
-	return 0;
 };

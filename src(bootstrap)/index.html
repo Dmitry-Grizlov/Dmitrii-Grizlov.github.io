@@ -429,8 +429,7 @@
 									<h5 class="modal-title" id="exampleModalToggleLabel2">
 										<div class="h4">Введите данные</div>
 									</h5>
-									<button type="button" class="btn-close" data-bs-dismiss="modal"
-										aria-label="Close"></button>
+									<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 								</div>
 								<div class="modal-body">
 									<div class="mb-3">
@@ -451,7 +450,7 @@
 								<div class="modal-footer justify-content-center">
 									<button type="button" class="btn leave_request_btn"
 										data-bs-target="#exampleModalToggle2" data-bs-toggle="modal"
-										onclick="ProcessEmailModal();">Отправить</button>
+										onclick="ProcessEmail();">Отправить</button>
 								</div>
 							</div>
 						</div>
@@ -677,16 +676,12 @@
 				</li>
 			</ul>
 
-			<form class="row needs-validation" novalidate>
+			<div class="row">
 				<div class="col-2"></div>
 				<div class="col-4">
 					<div class="input-text contact_field">
-						<input type="text" aria-label="First name" class="form-control name" id="validationCustom01"
-							value="" required placeholder="Имя">
+						<input type="text" aria-label="First name" class="form-control name" value="" placeholder="Имя">
 					</div>
-				</div>
-				<div class="valid-feedback">
-					Looks good!
 				</div>
 
 				<div class="col-4">
@@ -696,19 +691,19 @@
 					</div>
 				</div>
 				<div class="col-2"></div>
-			</form>
+			</div>
 
 
 		<div class="row mb-5">
 			<div class="col-2"></div>
 			<div class="col mt-3 mb-5 msg">
-				<textarea class="form-control message" rows="5" placeholder="Сообщение..."></textarea>
+				<textarea class="form-control message" rows="5" value="" placeholder="Сообщение..."></textarea>
 			</div>
 			<div class="col-2"></div>
 		</div>
 
 		<div class="col mt-5 mb-4 text-center">
-			<button class="submit-btn" type="button" onclick="Validate(); ProcessEmail();">Отправить</button>
+			<button class="submit-btn" type="button" onclick="ProcessEmail();">Отправить</button>
 		</div>
 
 		<ul class="list-unstyled text-center justify-content-around mt-5">
@@ -763,6 +758,8 @@
 			<footer>&copy; Copyright 2021 Дмитрий Гризлов. Design by Web</footer>
 		</div>
 	</section>
+	<script src="js/emailProcessor.js"></script>
+	<script src="js/validation.js"></script>
 	<script src="js/pr.js"></script>
 	<script src="js/goTopBtnScript.js"></script>
 </body>
