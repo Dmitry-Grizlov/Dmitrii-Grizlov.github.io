@@ -335,9 +335,9 @@
 			<div class="container">
 				<div class="h3 text-center pt-5 b-5 topic-title" id="prices">Расчет стоимости</div>
 
-				<div class="col-11 offset-1 mt-5 option-block needs-validation">						
+				<div class="col-11 offset-1 mt-5 option-block">						
 					<label for="type" class="form-label"><div class="h6">ТИП САЙТА</div></label>
-					<select class="form-select form" id="type" required>
+					<select class="form-select form needs-validation" id="type" required>
 					  <option selected disabled value="">Выберите пункт...</option>
 					  <option value="1">Сайт-визитка</option>
 					  <option value="2">Интернет-магазин</option>
@@ -348,7 +348,7 @@
 
 				<div class="col-11 offset-1 mt-5 option-block">
 					<label for="type" class="form-label"><div class="h6">ДИЗАЙН</div></label>
-					<select class="form-select form" id="design" required>
+					<select class="form-select form needs-validation" id="design" required>
 					  <option selected disabled value="">Выберите пункт...</option>
 					  <option value="1">Уникальный дизайн</option>
 					  <option value="2">Шаблонный-дизайн</option>
@@ -359,7 +359,7 @@
 
 				<div class="col-11 offset-1 mt-5 option-block">
 					<label for="type" class="form-label"><div class="h6">АДАПТИВНОСТЬ</div></label>
-					<select class="form-select form" id="flex" required>
+					<select class="form-select form needs-validation" id="flex" required>
 						<option selected> Выберите пункт...</option>
 						<option value="1">Большое разрешение</option>
 						<option value="2">Разрешение для телефона</option>
@@ -371,7 +371,7 @@
 				<div class="offset-1 mt-4 ">
 					<label for="customRange1" class="form-label">Сроки</label>
 					<div class="input-group text-center flex-nowrap range-block">
-						<input type="range" class="col-9 form-range ddln_range" min="1" max="4" step="1" id="deadline"
+						<input type="range" class="col-9 form-range needs-validation ddln_range" min="1" max="4" step="1" id="deadline"
 							onclick="ShowDeadline();">
 						<p class="px-4 input-group ddln_display" id="deadline-display">3 месяца</p>
 					</div>
@@ -380,7 +380,7 @@
 				<div class="offset-1 mt-4 ">
 					<label for="customRange1" class="form-label">Стоимость</label>
 					<div class="input-group text-center flex-nowrap range-block">
-						<input type="range" class="col-9 form-range ddln_range" id="budget" step="5000" min="30000"
+						<input type="range" class="col-9 form-range needs-validation ddln_range" id="budget" step="5000" min="30000"
 							max="150000" onclick="ShowBudget();">
 						<p class="px-4 input-group ddln_display" id="budget-display">90000руб.</p>
 					</div>
@@ -455,7 +455,7 @@
 				<div class="row justify-content-center mt-4 leave-ticket-btn">
 					<div class="col-12 mb-5 text-center">
 						<button type="submit" class="btn text-wrap leave_request_btn" data-bs-toggle="modal"
-							href="#exampleModalToggle" role="button" onclick="GetInfo()">
+							href="#exampleModalToggle" role="button" onclick="Validate(); GetInfo()">
 							Оставить заявку
 						</button>
 					</div>
