@@ -61,14 +61,14 @@ nav{
 }
 
 .bar-menu li{
-	border: 0px solid #2c3e51;
+	border: 1px solid #2c3e51;
 	border-radius: 5px;
 }
 
 .bar-menu li:hover{
-	border-width: 1px;
+	border-width: .5px;
 	border-color: white;
-	transition: .3s;
+	transition: .5s;
 }
 
 .bar-menu li:active{
@@ -155,6 +155,24 @@ nav{
 	transition: 1s;
 }
 
+.goTopBtn{
+	position: fixed;
+	right: 30px;
+	top: 90vh;
+	transition: .5s;
+	border-radius: 5px;
+	z-index: 100;
+	opacity: 0;
+}
+
+.goTopBtn:hover{
+	transition: .5s;
+}
+
+.goTopBtn button{
+	width: 100%;
+}
+
 .download_cv_button{
 	width:200px;
 	height: 30px;
@@ -224,6 +242,24 @@ nav{
 	box-shadow: 5px 5px 5px #2c3e51;
 }
 
+.ddln_range{
+	width: 80%;
+	height: 30px;
+	border: 1px solid #6d7682;
+	border-radius: 5px;
+}
+
+.range-block:focused{
+	box-shadow: #6d7682;
+}
+
+.ddln_display{
+
+	height: 30px;
+	border: 1px solid #6d7682;
+	border-radius: 5px;
+}
+
 .fith-screen{
 	background-color: #fff;
 	background-image: url(//img/backgrounds/price_range_bg.png);
@@ -284,10 +320,7 @@ nav{
 .small_customer_photo{
 	width: 100%;
 	height: 100%;
-}
-
-.switch_review{
-	margin-top: 50px;
+	border-radius: 50%;
 }
 
 .eighth-screen{
@@ -299,7 +332,11 @@ nav{
 	color: white;
 }
 
-.contacts img:hover{
+img{
+	transition: 1s;
+}
+
+.contacts-img:hover {
 	transform:rotate(1080deg);
 	transition:2s ease;
 }
