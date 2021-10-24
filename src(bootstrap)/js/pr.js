@@ -1,18 +1,15 @@
 function Validate() {
-    'use strict'
-    var forms = document.querySelectorAll('.needs-validation')
-  
-    // Loop over them and prevent submission
-    Array.prototype.slice.call(forms)
-      .forEach(function (form) {
-        form.addEventListener('submit', function (event) {
-          if (!form.checkValidity()) {
-            event.preventDefault()
-            event.stopPropagation()
-          }
-          form.classList.add('was-validated')
-        }, false)
-      })
+	'use strict'
+	var forms = document.querySelectorAll('.needs-validation');
+	Array.prototype.slice.call(forms).forEach(function (form) {
+			form.addEventListener('submit', function (event) {
+				if (!form.checkValidity()) {
+					event.preventDefault()
+					event.stopPropagation()
+				}
+				form.classList.add('was-validated')
+			}, false)
+		})
 };
 
 function GetType() {
@@ -102,8 +99,6 @@ function GetInfo() {
 	else if (sDeadline === 4)
 		baseprice += 5000;
 
-	console.log(data);
-
 	document.getElementById("site-type").innerHTML = "Тип Сайта: " + data[0];
 	document.getElementById("site-design").innerHTML = "Дизайн: " + data[1];
 	document.getElementById("site-flex").innerHTML = "Адаптивность: " + data[2];
@@ -113,36 +108,42 @@ function GetInfo() {
 }
 
 
-function ProcessEmailModal(){
-	$custName = $('.name-modal').val();
-	$custEmail = $('.emailAddress-modal').val();
-	$custMsg = $('.message-modal').val();
+function ProcessEmailModal() {
+	$custName = $('.name').val();
+	$custEmail = $('.emailAddress').val();
+	$custMsg = $('.message').val();
 
 	const email = {
-		name: $custName,
-		emailAddress: $custEmail,
-		message: $custMsg
+		name: $(this).$custName,
+		emailAddress: $(this).$custEmail,
+		message: $(this).$custMsg
 	};
 
 	alert("Письмо отправлено");
 	console.log(email);
-	return 0;
+	return email;
 };
 
-function ProcessEmail(){
-	$('.name').each(function(){
-		if($('.name' != ""))
+function ProcessEmail() {
+	$('.name').each(function () {
+		if ($('.name' != "default"))
 			$custName = $(this).val();
+		else
+			form.classList.add('.needs-validation');
 	});
 
-	$('.emailAddress').each(function(){
-		if($('.emailAddress' != ""))
+	$('.emailAddress').each(function () {
+		if ($('.emailAddress' != "default"))
 			$custEmail = $(this).val();
+		else
+			form.classList.add('.needs-validation');
 	});
 
-	$('.message').each(function(){
-		if($('.message' != ""))
+	$('.message').each(function () {
+		if ($('.message value' != "default"))
 			$custMsg = $(this).val();
+		else
+			alert("Empty message!");
 	});
 	const email = {
 		name: $custName,
