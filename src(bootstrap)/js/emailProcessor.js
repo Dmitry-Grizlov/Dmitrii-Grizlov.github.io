@@ -23,14 +23,27 @@ function ProcessEmail(){
 			continue;
 		else
 			email[2] = msgs[i].value;
-			
 	}
 
-	if(email.length < 3){
-		alert("Пожалуйста, заполните все поля!");
-		return;
-	}else
-		alert("Сообщение отправлено");
-	return email;
-	
+		if(email.length != 3){
+			alert("Пожалуйста, заполните все поля!");
+			return;
+		}else
+			alert("Сообщение отправлено");
+
+	$(document).ready(function(){
+		$("form").submit(function(event){
+			$.ajax({
+				type: "POST",
+				url: "php/mail.php",
+				data: $(this).serialize()
+			}).done(function(){
+				$(this).find("input").val("");
+				$(form).trigger("reset");
+			});
+			return false;
+		});
+	});
 };
+
+

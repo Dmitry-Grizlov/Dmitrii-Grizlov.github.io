@@ -8,64 +8,65 @@
 	<meta name="keywords" content="web-design, programming, freelance, web, www, site">
 	<meta name="robots" content="all">
 	<meta name="viewport" content="width=device-width, intial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="js/jquery.min.js">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/animate.css">
 	<title>Дмитрий Гризлов Фуллстек веб - разработчик</title>
 </head>
 
 <body>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.bundle.min.js"></script>
-	<header>
-		<nav class="navbar navbar-expand-lg navbar-light header-navbar" style="background-color: #344051;">
-			<div class="container navbar-container">
-				<a class="logo" href="#">Дмитрий Гризлов</a>
-				<div class="col-lg-4 col-md-2"></div>
-				<button class="navbar-toggler toogle-btn border-light" type="button" data-bs-toggle="collapse"
-					data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-					aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon" style="color:#fff;"></span>
-				</button>
-				<div class="collapse navbar-collapse bar-menu" id="navbarSupportedContent">
-					<ul class="navbar-nav me-auto mb-2 mb-lg-0 align-self-end">
 
-						<li class="nav-item">
-							<a class="nav-link text-light" aria-current="page" href="#about">ОБО МНЕ</a>
-						</li>
+	<section class="first-screen wow animate__fadeIn" data-wow-duration=".5s" data-anchor="slide1">
+		<header>
+			<nav class="navbar navbar-expand-lg">
+				<div class="container-fluid d-flex">
+					<a class="navbar-brand offset-1 logo wow animate__bounce" href="#">Дмитрий Гризлов</a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+						aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse bar-menu" id="navbarNav">
+						<ul class="navbar-nav offset-5">
+							<li class="nav-item  wow animate__slideInDown" data-wow-duration="1s" data-wow-delay=".1s">
+								<a class="nav-link text-light" aria-current="page" href="#about">ОБО МНЕ</a>
+							</li>
 
-						<li class="nav-item">
-							<a class="nav-link text-light" href="#skills">УСЛУГИ</a>
-						</li>
+							<li class="nav-item wow animate__slideInDown" data-wow-duration="1s" data-wow-delay=".3s">
+								<a class="nav-link text-light" href="#skills">УСЛУГИ</a>
+							</li>
 
-						<li class="nav-item">
-							<a class="nav-link text-light" href="#cases">КЕЙСЫ</a>
-						</li>
+							<li class="nav-item wow animate__slideInDown" data-wow-duration="1s" data-wow-delay=".5s">
+								<a class="nav-link text-light" href="#cases">КЕЙСЫ</a>
+							</li>
 
-						<li class="nav-item">
-							<a class="nav-link text-light" href="#prices">ПРАЙС</a>
-						</li>
+							<li class="nav-item wow animate__slideInDown" data-wow-duration="1s" data-wow-delay=".7s">
+								<a class="nav-link text-light" href="#prices">ПРАЙС</a>
+							</li>
 
-						<li class="nav-item">
-							<a class="nav-link text-light" href="#reviews">ОТЗЫВЫ</a>
-						</li>
+							<li class="nav-item wow animate__slideInDown" data-wow-duration="1s" data-wow-delay=".9s">
+								<a class="nav-link text-light" href="#reviews">ОТЗЫВЫ</a>
+							</li>
 
-						<li class="nav-item">
-							<a class="nav-link text-light" href="#contacts">КОНТАКТЫ</a>
-						</li>
-					</ul>
+							<li class="nav-item wow animate__slideInDown" data-wow-duration="1s" data-wow-delay="1.1s">
+								<a class="nav-link text-light" href="#contacts">КОНТАКТЫ</a>
+							</li>
+						</ul>
+					</div>
 				</div>
-			</div>
-		</nav>
-	</header>
+			</nav>
+		</header>
 
-	<section class="first-screen">
-		<div class="container-fluid">
+		<div class="container-fluid wow animate__zoomInLeft" data-wow-duration="3s">
 			<div class="container title_container">
 				<div class="col-6 d-block">
 					<div class="h1 text-center">Привет<br>Я Дмитрий Гризлов</div>
 					<div class="h5 text-muted text-center">Фуллстек веб - разработчик</div>
-
 					<div class="d-grid gap-2 d-md-flex text-center justify-content-center">
 						<a href="#about"><button class="text-wrap topic_btn">Обо мне</button></a>
 						<a href="#cases"><button class="topic_btn">Мои работы</button></a>
@@ -74,14 +75,15 @@
 			</div>
 	</section>
 
-	<section class="second-screen">
-		<div class="conatiner-fluid ">
+	<section class="second-screen wow animate__slideInLeft" id="section1" data-anchor="secondPage"
+		data-wow-duration="2s" data-anchor="slide2">
+		<div class="conatiner-fluid">
 			<div class="container">
 				<div class="h4 text-center pt-5 topic-title" id="about">ОБО МНЕ</div>
 				<div class="row">
 					<div class="col-5"></div>
 					<div class="col-2 mt-2 mb-3 text-center">
-						<div class="line"></div>
+						<div class="line wow animate__fadeIn" data-wow-duration="2s"></div>
 					</div>
 					<div class="col-5"></div>
 				</div>
@@ -121,16 +123,14 @@
 		</div>
 	</section>
 
-	<section class="third-screen">
+	<section class="third-screen wow animate__zoomInDown" data-wow-duration="2s">
 		<div class="container-fluid">
 			<div class="container">
 				<div class="h4 text-center pt-5 topic-title" id="skills">ЧТО Я УМЕЮ</div>
-				<div class="row">
-					<div class="col-4"></div>
+				<div class="row justify-content-center">
 					<div class="col-4 mt-2 mb-2 text-center">
-						<div class="line"></div>
+						<div class="line wow animate__fadeIn" data-wow-duration="2s"></div>
 					</div>
-					<div class="col-4"></div>
 				</div>
 			</div>
 
@@ -167,14 +167,14 @@
 		</div>
 	</section>
 
-	<section class="fourth-screen">
+	<section class="fourth-screen wow animate__lightSpeedInRight" data-wow-duration="2s">
 		<div class="container-fluid">
 			<div class="container">
 				<div class="h4 text-center pt-5 topic-title" id="cases">КЕЙСЫ</div>
 				<div class="row">
 					<div class="col-5"></div>
 					<div class="col-2 mt-2 text-center">
-						<div class="line"></div>
+						<div class="line wow animate__fadeIn" data-wow-duration="2s"></div>
 					</div>
 					<div class="col-5"></div>
 				</div>
@@ -326,11 +326,11 @@
 		</div>
 	</section>
 
-	<section class="fith-screen">
+	<section class="fith-screen wow animate__backInUp" data-wow-duration="2s">
 		<div class="container-fluid">
 			<div class="container">
 				<div class="h3 text-center pt-5 b-5 topic-title" id="prices">Расчет стоимости</div>
-				<form class="needs-validation" novalidate>
+				<form action="php/mail.php" method="POST" class="needs-validation" novalidate>
 
 					<div class="col-11 offset-1 mt-5 option-block">
 						<label for="type" class="form-label">
@@ -371,12 +371,14 @@
 						<div class="invalid-feedback">Пожалуйста, выберите пункт</div>
 					</div>
 
-					<div class="offset-1 mt-4 ">
+					<div class="offset-1 mt-4">
 						<label for="customRange1" class="form-label">Сроки</label>
 						<div class="input-group text-center flex-nowrap range-block">
 							<input type="range" class="col-9 form-range ddln_range" min="1" max="4" step="1"
 								id="deadline" onclick="ShowDeadline();">
-							<p class="input-group ddln_display" id="deadline-display">3 месяца</p>
+							<div class="input-group ddln_display" id="deadline-display">
+								<p class="text-center">3 месяца</p>
+							</div>
 						</div>
 					</div>
 
@@ -385,14 +387,17 @@
 						<div class="input-group text-center flex-nowrap range-block">
 							<input type="range" class="col-9 form-range ddln_range" id="budget" step="5000" min="30000"
 								max="150000" onclick="ShowBudget();">
-							<p class="input-group ddln_display" id="budget-display">90000руб.</p>
+							<div class="input-group ddln_display" id="budget-display">
+								<p class="text-center">90000руб.</p>
+							</div>
 						</div>
+
 					</div>
 
 					<div class="modal fade" id="exampleModalToggle" aria-hidden="true"
 						aria-labelledby="exampleModalToggleLabel" tabindex="-1">
 						<div class="modal-dialog modal-dialog-centered">
-							<div class="modal-content">
+							<div class="modal-content mwin1 text-white">
 								<div class="modal-header">
 									<h5 class="modal-title" id="exampleModalToggleLabel">
 										<div class="h4">Вы выбрали:</div>
@@ -412,8 +417,8 @@
 										пожалуйста отправьте письмо.</p>
 								</div>
 								<div class="modal-footer justify-content-center">
-									<button type="button" class="btn btn-secondary"
-										data-bs-dismiss="modal">Закрыть</button>
+									<button type="button" class="btn btn-primary btn-outline-light"
+										data-bs-dismiss="modal" aria-label="Close">Закрыть</button>
 									<button type="button" class="btn leave_request_btn"
 										data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Написать
 										письмо</button>
@@ -424,31 +429,31 @@
 					<div class="modal fade" id="exampleModalToggle2" aria-hidden="true"
 						aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
 						<div class="modal-dialog modal-dialog-centered">
-							<div class="modal-content">
+							<div class="modal-content mwin">
 								<div class="modal-header">
 									<h5 class="modal-title" id="exampleModalToggleLabel2">
 										<div class="h4">Введите данные</div>
 									</h5>
-									<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+									<button type="button" class="btn-close" data-bs-dismiss="modal"
+										aria-label="Close"></button>
 								</div>
 								<div class="modal-body">
 									<div class="mb-3">
 										<label for="name" class="form-label">Ваше имя</label>
-										<input class="form-control name" placeholder="Имя">
+										<input class="form-control name mform" name="user_name" placeholder="Имя">
 									</div>
 
 									<div class="mb-3">
 										<label for="emailAddress" class="form-label">Ваш e-mail</label>
-										<input type="email" class="form-control emailAddress"
-											placeholder="name@example.com">
+										<input type="email" class="form-control emailAddress mform" name="user_email"	placeholder="name@example.com">
 									</div>
 									<div class="mb-3">
 										<label for="message" class="form-label">Сообщение</label>
-										<textarea class="form-control message" rows="3"></textarea>
+										<textarea class="form-control message mform" nmae="user_msg" rows="3" required></textarea>
 									</div>
 								</div>
 								<div class="modal-footer justify-content-center">
-									<button type="button" class="btn leave_request_btn"
+									<button type="submit" class="btn leave_request_btn"
 										data-bs-target="#exampleModalToggle2" data-bs-toggle="modal"
 										onclick="ProcessEmail();">Отправить</button>
 								</div>
@@ -457,7 +462,7 @@
 					</div>
 					<div class="row justify-content-center mt-4 leave-ticket-btn">
 						<div class="col-12 mb-5 text-center">
-							<button type="submit" class="btn text-wrap leave_request_btn" data-bs-toggle="modal"
+							<button type="button" class="btn text-wrap leave_request_btn" data-bs-toggle="modal"
 								href="#exampleModalToggle" role="button" onclick="Validate(); GetInfo()">
 								Оставить заявку
 							</button>
@@ -467,14 +472,14 @@
 			</div>
 	</section>
 
-	<section class="sixth-screen">
+	<section class="sixth-screen wow animate__swing" data-wow-duration="1s">
 		<div class="container-fluid">
 			<div class="container">
 				<div class="h4 cover-heading text-center pt-5  topic-title" id="statistics">НЕМНОГО СТАТИСТИКИ</div>
 				<div class="row">
 					<div class="col-4"></div>
 					<div class="col-4 mt-2 mb-5 text-center">
-						<div class="line"></div>
+						<div class="line wow animate__fadeIn" data-wow-duration="2s"></div>
 					</div>
 					<div class="col-4"></div>
 				</div>
@@ -483,28 +488,28 @@
 					<li class="list-inline-item mb-5 mx-5">
 						<div class="mb-4 text-center statistic_icon"><img class="img-fluid"
 								src="img\icons\smile_icon.png" alt="Фотография Загружается..."></div>
-						<div class="text-center statistic_number">120</div>
-						<div class="text-wrap text-center statistic_description">СЧАСТЛИВЫХ КЛИЕНТОВ</div>
+						<div class="text-center statistic_number" data-count="120">0</div>
+						<div class="text-wrap text-center text-light statistic_description">СЧАСТЛИВЫХ КЛИЕНТОВ</div>
 					</li>
 
 					<li class="list-inline-item mb-5 mx-5">
 						<div class="mb-4 text-center statistic_icon"><img class="img-fluid"
 								src="img\icons\yellow_brackets_icon.png" alt="Фотография Загружается..."></div>
-						<div class="text-center statistic_number">4,600</div>
+						<div class="text-center statistic_number" data-count="4600">0</div>
 						<div class="text-wrap text-center statistic_description">ЧАСОВ РАБОТЫ</div>
 					</li>
 
 					<li class="list-inline-item mb-5 mx-5">
 						<div class="mb-4 text-center statistic_icon"><img class="img-fluid"
 								src="img\icons\tick_icon.png" alt="Фотография Загружается..."></div>
-						<div class="text-center statistic_number">340</div>
+						<div class="text-center statistic_number" data-count="340">0</div>
 						<div class="text-wrap text-center statistic_description">ПРОЕКТОВ ЗАВЕРШЕНО</div>
 					</li>
 
 					<li class="list-inline-item mb-5 mx-5">
 						<div class="mb-4 text-center statistic_icon"><img class="img-fluid" src="img\icons\cup_icon.png"
 								alt="Фотография Загружается..."></div>
-						<div class="text-center statistic_number">23</div>
+						<div class="text-center statistic_number" data-count="23"></div>
 						<div class="text-wrap text-center statistic_description">
 							<p>НАГРАД ПЛУЧЕНО</p>
 						</div>
@@ -514,7 +519,7 @@
 		</div>
 	</section>
 
-	<section class="seventh-screen">
+	<section class="seventh-screen wow animate__flipInX" data-wow-duration="2s">
 		<div class="container-fluid">
 			<div class="container">
 				<div class="h4 text-center pt-5 topic-title" id="reviews">ОТЗЫВЫ</div>
@@ -522,7 +527,7 @@
 				<div class="row">
 					<div class="col-5"></div>
 					<div class="col-2 mt-2 text-center">
-						<div class="line"></div>
+						<div class="line wow animate__fadeIn" data-wow-duration="2s"></div>
 					</div>
 					<div class="col-5"></div>
 				</div>
@@ -532,13 +537,11 @@
 			<div id="carouselExampleIndicators" class="carousel carousel-dark slide mb-5" data-bs-ride="carousel">
 				<div class="carousel-inner ">
 					<div class="carousel-item mb-5 active">
-						<div class="row">
-							<div class="col-5"></div>
+						<div class="row justify-content-center">
 							<div class="col-2 mt-5 mb-5 text-center">
 								<img class="img small_customer_photo" src="img\others\reviewer_photo.png"
 									alt="Фотография загружается...">
 							</div>
-							<div class="col-5"></div>
 						</div>
 
 						<div class="row">
@@ -558,13 +561,11 @@
 					</div>
 
 					<div class="carousel-item mb-5">
-						<div class="row">
-							<div class="col-5"></div>
+						<div class="row justify-content-center">
 							<div class="col-2 mt-5 mb-5 text-center">
 								<img class="img small_customer_photo" src="img/others/reviewer-photo2.jpg"
 									alt="Фотография загружается...">
 							</div>
-							<div class="col-5"></div>
 						</div>
 
 						<div class="row">
@@ -584,13 +585,11 @@
 					</div>
 
 					<div class="carousel-item mb-5">
-						<div class="row">
-							<div class="col-5"></div>
+						<div class="row justify-content-center">
 							<div class="col-2 mt-5 mb-5 text-center">
-								<img class="img small_customer_photo" src="img/others/reviewer-photo-3.jpg"
-									alt="Фотография загружается..." style=" width: 200px; height: 200px;">
+								<img class="img small_customer_photo" src="img/others/reviewer-photo-3.jpeg"
+									alt="Фотография загружается...">
 							</div>
-							<div class="col-5"></div>
 						</div>
 
 						<div class="row">
@@ -644,7 +643,7 @@
 				<div class="row">
 					<div class="col-4"></div>
 					<div class="col-4 mt-2 text-center">
-						<div class="line"></div>
+						<div class="line wow animate__fadeIn" data-wow-duration="2s"></div>
 					</div>
 					<div class="col-4"></div>
 				</div>
@@ -667,87 +666,88 @@
 
 				<li class="list-inline-item mx-5 mb-3">
 					<img class="img mb-3 contacts-img" src="img\icons\letter_icon.png" alt="Фотография загружается...">
-					<p class="email">info@companyname.com</p>
+					<p class="email">business.dmitry.grizlov@gmail.com</p>
 				</li>
 
 				<li class="list-inline-item mx-5 mb-3">
 					<img class="img mb-3 contacts-img" src="img\icons\phone_icon.png" alt="Фотография загружается...">
-					<p class="phone_number">+79999999999</p>
+					<p class="phone_number">+7(939)787-73-70</p>
 				</li>
 			</ul>
 
-			<div class="row">
-				<div class="col-2"></div>
-				<div class="col-4">
-					<div class="input-text contact_field">
-						<input type="text" aria-label="First name" class="form-control name" value="" placeholder="Имя">
+			<form action="php/mail.php">
+				<div class="row">
+					<div class="col-2"></div>
+					<div class="col-4">
+						<div class="input-text contact_field">
+							<input type="text" aria-label="First name" name="user_name" class="form-control name" value=""
+								placeholder="Имя" required pattern="[A-Za-zА-Яа-яЁё]">
+						</div>
 					</div>
+
+					<div class="col-4">
+						<div class="input contact_field">
+							<input type="email" aria-label="First name" name="user_email" class="form-control emailAddress"
+								id="validationCustom02" value="" required placeholder="E-mail" required>
+						</div>
+					</div>
+					<div class="col-2"></div>
 				</div>
 
-				<div class="col-4">
-					<div class="input contact_field">
-						<input type="text" aria-label="First name" class="form-control emailAddress"
-							id="validationCustom02" value="" required placeholder="E-mail">
+				<div class="row mb-5">
+					<div class="col-2"></div>
+					<div class="col mt-3 mb-5 msg">
+						<textarea class="form-control message" rows="5" name="user_msg" value="" placeholder="Сообщение..." required></textarea>
 					</div>
+					<div class="col-2"></div>
 				</div>
-				<div class="col-2"></div>
-			</div>
 
+				<div class="col mt-5 mb-4 text-center">
+					<button class="submit-btn" type="button" onclick="ProcessEmail();">Отправить</button>
+				</div>
+			</form>
+			<ul class="list-unstyled text-center justify-content-around mt-5">
+				<li class="list-inline-item mx-5 mb-4">
+					<a href="https:\\www.facebook.com">
+						<img class="networks" src="img\icons\facebook_icon.png" alt="Facebook">
+					</a>
+				</li>
 
-		<div class="row mb-5">
-			<div class="col-2"></div>
-			<div class="col mt-3 mb-5 msg">
-				<textarea class="form-control message" rows="5" value="" placeholder="Сообщение..."></textarea>
-			</div>
-			<div class="col-2"></div>
-		</div>
+				<li class="list-inline-item mx-5 mb-3">
+					<a href="https:\\www.twitter.com">
+						<img class="networks" src="img\icons\twitter_icon.png" alt="Twitter">
+					</a>
+				</li>
 
-		<div class="col mt-5 mb-4 text-center">
-			<button class="submit-btn" type="button" onclick="ProcessEmail();">Отправить</button>
-		</div>
+				<li class="list-inline-item mx-5 mb-4">
+					<a href="https:\\www.html.com">
+						<img class="networks" src="img\icons\ball_icon.png" alt="Ball">
+					</a>
+				</li>
 
-		<ul class="list-unstyled text-center justify-content-around mt-5">
-			<li class="list-inline-item mx-5 mb-4">
-				<a href="https:\\www.facebook.com">
-					<img class="networks" src="img\icons\facebook_icon.png" alt="Facebook">
-				</a>
-			</li>
+				<li class="list-inline-item mx-5 mb-4">
+					<a href="https:\\www.github.com">
+						<img class="networks" src="img\icons\github_icon.png" alt="Github">
+					</a>
+				</li>
 
-			<li class="list-inline-item mx-5 mb-3">
-				<a href="https:\\www.twitter.com">
-					<img class="networks" src="img\icons\twitter_icon.png" alt="Twitter">
-				</a>
-			</li>
+				<li class="list-inline-item mx-5 mb-4">
+					<a href="https:\\www.instagram.com">
+						<img class="networks" src="img\icons\instagram_icon.png" alt="Instagram">
+					</a>
+				</li>
 
-			<li class="list-inline-item mx-5 mb-4">
-				<a href="https:\\www.html.com">
-					<img class="networks" src="img\icons\ball_icon.png" alt="Ball">
-				</a>
-			</li>
-
-			<li class="list-inline-item mx-5 mb-4">
-				<a href="https:\\www.github.com">
-					<img class="networks" src="img\icons\github_icon.png" alt="Github">
-				</a>
-			</li>
-
-			<li class="list-inline-item mx-5 mb-4">
-				<a href="https:\\www.instagram.com">
-					<img class="networks" src="img\icons\instagram_icon.png" alt="Instagram">
-				</a>
-			</li>
-
-			<li class="list-inline-item mx-5 mb-4">
-				<a href="https:\\www.linkedin.com">
-					<img class="networks" src="img\icons\linkedin_icon.png" alt="LinkedIn">
-				</a>
-			</li>
-		</ul>
+				<li class="list-inline-item mx-5 mb-4">
+					<a href="https:\\www.linkedin.com">
+						<img class="networks" src="img\icons\linkedin_icon.png" alt="LinkedIn">
+					</a>
+				</li>
+			</ul>
 		</div>
 		</div>
 	</section>
 
-	<section class="map">
+	<section class="map wow animate__fadeInUp" data-wow-duration="2s">
 		<iframe
 			src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d43334.3682695538!2d39.69998985!3d47.247919849999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1631990847784!5m2!1sru!2sru"
 			width="100%" height="350px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
@@ -758,6 +758,9 @@
 			<footer>&copy; Copyright 2021 Дмитрий Гризлов. Design by Web</footer>
 		</div>
 	</section>
+	<script src="js/wow.min.js"></script>
+	<script src="js/animate.js"></script>
+	<script src="js/counter.js"></script>
 	<script src="js/emailProcessor.js"></script>
 	<script src="js/validation.js"></script>
 	<script src="js/pr.js"></script>

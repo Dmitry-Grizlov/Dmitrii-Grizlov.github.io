@@ -7,7 +7,6 @@ $('.statistic_number').each(function() {
   },
 
   {
-
     duration: 3000,
     easing:'linear',
     step: function() {
