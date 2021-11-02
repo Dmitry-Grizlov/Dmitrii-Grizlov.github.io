@@ -1,49 +1,17 @@
-function ProcessEmail(){
-	const email = [];
-	
-	var names = document.getElementsByClassName("name");
-	for (var i = 0; i < names.length; i++) {
-    	if(names[i].value == "")
-			continue;
-		else
-			email[0] = names[i].value;
-	}
-
-	var emails = document.getElementsByClassName("emailAddress");
-	for (var i = 0; i< emails.length; i++) {
-    	if(emails[i].value == "")
-			continue;
-		else
-			email[1] = emails[i].value;
-	}
-
-	var msgs = document.getElementsByClassName("message");
-	for (var i = 0;i < msgs.length; i++) {
-    	if(msgs[i].value == "")
-			continue;
-		else
-			email[2] = msgs[i].value;
-	}
-
-		if(email.length != 3){
-			alert("Пожалуйста, заполните все поля!");
-			return;
-		}else
-			alert("Сообщение отправлено");
-
-	$(document).ready(function(){
-		$("form").submit(function(event){
-			$.ajax({
-				type: "POST",
-				url: "php/mail.php",
-				data: $(this).serialize()
-			}).done(function(){
-				$(this).find("input").val("");
-				$(form).trigger("reset");
-			});
-			return false;
+$(document).ready(function () {
+	$(form).submit(function (event) {
+		event.preventDefault();
+		$.ajax({
+			type: "POST",
+			url: "php.mail2.php",
+			data: $(this).serialize()
+		}).done(function () {
+			alert("Message was sent!");
+			$(this).find("input").val("");
+			$(form).trigger("reset");
 		});
+		return false;
 	});
-};
+});
 
 

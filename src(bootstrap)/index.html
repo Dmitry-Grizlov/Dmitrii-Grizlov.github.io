@@ -330,13 +330,13 @@
 		<div class="container-fluid">
 			<div class="container">
 				<div class="h3 text-center pt-5 b-5 topic-title" id="prices">Расчет стоимости</div>
-				<form action="php/mail.php" method="POST" class="needs-validation" novalidate>
+				<form action="php/mail1.php" method="POST" class="needs-validation" novalidate>
 
 					<div class="col-11 offset-1 mt-5 option-block">
 						<label for="type" class="form-label">
 							<div class="h6">ТИП САЙТА</div>
 						</label>
-						<select class="form-select form" id="type" required>
+						<select class="form-select form" name="type" id="type" required>
 							<option selected disabled value="">Выберите пункт...</option>
 							<option value="1">Сайт-визитка</option>
 							<option value="2">Интернет-магазин</option>
@@ -349,7 +349,7 @@
 						<label for="design" class="form-label">
 							<div class="h6">ДИЗАЙН</div>
 						</label>
-						<select class="form-select form" id="design" required>
+						<select class="form-select form" name="design" id="design" required>
 							<option selected disabled value="">Выберите пункт...</option>
 							<option value="1">Уникальный дизайн</option>
 							<option value="2">Шаблонный-дизайн</option>
@@ -362,7 +362,7 @@
 						<label for="flex" class="form-label">
 							<div class="h6">АДАПТИВНОСТЬ</div>
 						</label>
-						<select class="form-select form" id="flex" required>
+						<select class="form-select form" name="adaptivity" id="flex" required>
 							<option selected disabled value="">Выберите пункт...</option>
 							<option value="1">Большое разрешение</option>
 							<option value="2">Разрешение для телефона</option>
@@ -374,7 +374,7 @@
 					<div class="offset-1 mt-4">
 						<label for="customRange1" class="form-label">Сроки</label>
 						<div class="input-group text-center flex-nowrap range-block">
-							<input type="range" class="col-9 form-range ddln_range" min="1" max="4" step="1"
+							<input type="range" name="deadline" class="col-9 form-range ddln_range" min="1" max="4" step="1"
 								id="deadline" onclick="ShowDeadline();">
 							<div class="input-group ddln_display" id="deadline-display">
 								<p class="text-center">3 месяца</p>
@@ -385,7 +385,7 @@
 					<div class="offset-1 mt-4 ">
 						<label for="customRange1" class="form-label">Стоимость</label>
 						<div class="input-group text-center flex-nowrap range-block">
-							<input type="range" class="col-9 form-range ddln_range" id="budget" step="5000" min="30000"
+							<input type="range" class="col-9 form-range ddln_range" name="budget" id="budget" step="5000" min="30000"
 								max="150000" onclick="ShowBudget();">
 							<div class="input-group ddln_display" id="budget-display">
 								<p class="text-center">90000руб.</p>
@@ -440,22 +440,22 @@
 								<div class="modal-body">
 									<div class="mb-3">
 										<label for="name" class="form-label">Ваше имя</label>
-										<input class="form-control name mform" name="user_name" placeholder="Имя">
+										<input class="form-control name mform" name="user_name" placeholder="Имя" required>
 									</div>
 
 									<div class="mb-3">
 										<label for="emailAddress" class="form-label">Ваш e-mail</label>
-										<input type="email" class="form-control emailAddress mform" name="user_email"	placeholder="name@example.com">
+										<input type="email" class="form-control emailAddress mform" name="user_email"
+											placeholder="name@example.com" required>
 									</div>
 									<div class="mb-3">
 										<label for="message" class="form-label">Сообщение</label>
-										<textarea class="form-control message mform" nmae="user_msg" rows="3" required></textarea>
+										<textarea class="form-control message mform" name="user_msg" rows="3" required></textarea>
 									</div>
 								</div>
 								<div class="modal-footer justify-content-center">
 									<button type="submit" class="btn leave_request_btn"
-										data-bs-target="#exampleModalToggle2" data-bs-toggle="modal"
-										onclick="ProcessEmail();">Отправить</button>
+										data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Отправить</button>
 								</div>
 							</div>
 						</div>
@@ -675,20 +675,21 @@
 				</li>
 			</ul>
 
-			<form action="php/mail.php">
+			<form action="php/mail2.php" method="post">
 				<div class="row">
 					<div class="col-2"></div>
 					<div class="col-4">
 						<div class="input-text contact_field">
-							<input type="text" aria-label="First name" name="user_name" class="form-control name" value=""
-								placeholder="Имя" required pattern="[A-Za-zА-Яа-яЁё]">
+							<input type="text" aria-label="First name" name="usr_name" class="form-control name"
+								value="" placeholder="Имя" required>
 						</div>
 					</div>
 
 					<div class="col-4">
 						<div class="input contact_field">
-							<input type="email" aria-label="First name" name="user_email" class="form-control emailAddress"
-								id="validationCustom02" value="" required placeholder="E-mail" required>
+							<input type="email" aria-label="First name" name="usr_email"
+								class="form-control emailAddress" id="validationCustom02" value="" required
+								placeholder="E-mail" required>
 						</div>
 					</div>
 					<div class="col-2"></div>
@@ -697,13 +698,14 @@
 				<div class="row mb-5">
 					<div class="col-2"></div>
 					<div class="col mt-3 mb-5 msg">
-						<textarea class="form-control message" rows="5" name="user_msg" value="" placeholder="Сообщение..." required></textarea>
+						<textarea class="form-control message" rows="5" name="usr_msg" value=""
+							placeholder="Сообщение..." required></textarea>
 					</div>
 					<div class="col-2"></div>
 				</div>
 
 				<div class="col mt-5 mb-4 text-center">
-					<button class="submit-btn" type="button" onclick="ProcessEmail();">Отправить</button>
+					<button class="submit-btn" type="submit">Отправить</button>
 				</div>
 			</form>
 			<ul class="list-unstyled text-center justify-content-around mt-5">
@@ -743,7 +745,6 @@
 					</a>
 				</li>
 			</ul>
-		</div>
 		</div>
 	</section>
 
