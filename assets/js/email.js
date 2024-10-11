@@ -7,13 +7,16 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
 
   // Send a POST request using fetch
   // todo: update the host to the live one
-  fetch("http://localhost:1234/send-email?source=portfolio website", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
+  fetch(
+    "https://test-heroku-go-a6840f48f3ab.herokuapp.com/send-email?source=portfolio website",
+    {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
     },
-    body: JSON.stringify(data),
-  })
+  )
     .then((response) => {
       if (!response.ok) {
         throw new Error("Network response was not ok");
