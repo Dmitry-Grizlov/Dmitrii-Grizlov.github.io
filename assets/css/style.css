@@ -12715,3 +12715,19 @@ pre .code {
 .section-lg {
   padding: 100px 0 !important;
 }
+
+#customAlert {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1050; /* Ensure it appears above other content */
+  margin: 0 auto;
+  width: 100%;
+  max-width: 100%; /* Make it respect the container width */
+  border-radius: 0; /* Remove the default alert border-radius for a full-width look */
+}
+
+.container #customAlert {
+  max-width: fit-content; /* Or whatever width your container uses */
+}

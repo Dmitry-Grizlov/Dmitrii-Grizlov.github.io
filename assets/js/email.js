@@ -21,9 +21,10 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
       if (!response.ok) {
         throw new Error("Network response was not ok");
       }
+
+      showAlert("You request was successfully sent", "success");
     })
-    .catch((error) => {
-      console.error(error);
-      alert("Error sending email");
+    .catch(() => {
+      showAlert("There was an error sending your request", "danger");
     });
 });
